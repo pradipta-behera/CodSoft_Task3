@@ -1,50 +1,66 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e3eb;
+}
+.calculate {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: #d1c9c9;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #eee;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.operator {
+  color: #2f9fff;
+}
 
-body{
-    background: rgb(217, 203, 171);
-    padding:70px
-}
-*{
-    box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    padding-bottom: 50px;
-}
-.wrap{
-    width: 400px;
-    margin:auto;
-    height:auto;
-    background: white;
-    border-radius: 20px;
-    padding:60px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-form{
-    box-shadow: 10px;
-    height: 50vh;
-}
-input[type=text]{
-    width:100%;
-    padding:10px;
-    font-size:30px;
-    font-weight:bold;
-    margin-top:20px;
-    border-radius:10px;
-    color: rgb(162, 123, 31);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.container{
-    padding-top: 20px;
-}
-
-input[type=button]
-{
-    width:65px;
-    height: vh;
-    padding:10px;
-    font-size:22px;
-    font-weight:bold;
-    border-radius:10px;
-    color: rgb(162, 123, 31);
+#btn{
+    height: 70px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
     cursor: pointer;
+    background-color: #eee;
 }
